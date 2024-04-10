@@ -20,7 +20,7 @@
 /*Navegador e imagenes/logo*/
 .navegador{
     background-color: darkcyan; /*Color de fondo del navegador*/
-    position: sticky;
+    position: relative;
     width: 100%;
     top: 0;
     display: flex;
@@ -28,8 +28,12 @@
     padding: 10px;
 }
 .navegador-imagen{
-    width: 150px; /*ancho*/
-    height: 150px; /*alto*/
+    width: 80px; /*ancho*/
+    height: 78px; /*alto*/
+    position: absolute;
+    left: 0;
+    top: 0;
+
 }
 .portada-imagen{
     width: 100%;
@@ -67,7 +71,7 @@
 }
 .sinopsis-saga1{ /*modelado de caja a continuacion*/
     width: 200px;
-    /*height: 200px;*/
+    height: 400px;
     background-color: rgba(60, 92, 133, 0.929);
     border-radius: 5px;/*para redondear bordes*/
     border-width: 2px;/*ancho del border*/
@@ -75,8 +79,8 @@
     border-style: solid;/*border continuo*/
     margin: 10px;/*margen entre el contenido y la caja*/
     padding: 25px;
-    /*overflow-y: scroll;*/
-    position: relative;
+    overflow-y: scroll;
+    /*position: relative;*/
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -122,6 +126,9 @@
     border: 0px;
     padding: 5px;
     border-radius: 5px;
+    /*position: absolute;
+    right: 10px;
+    bottom: -300px;*/
 }
 .boton-primario:hover{ /*pseudoclases, cambia de color cuando pasa el mouse por encima*/
     background-color: rgba(38, 69, 110, 0.929);
@@ -201,6 +208,7 @@
 
 /*formulario contactos*/
 .form-contacto{
+    font-size: 20px;
     background-color: darkcyan;
     width: 350px;
     margin: auto;
@@ -210,19 +218,28 @@
 .form-contactos-grupo{
     display: flex;
     flex-direction: column;
+    height: 80px;
+    gap: 15px;
+    margin: 15px 0px;
+}
+.form-contactos-grupo-mensaje{
+    display: flex;
+    flex-direction: column;
+    height: 80px;
     gap: 10px;
     margin: 10px 0px;
 }
 .form-contactos-grupo-label{
     color: white;
 }
-.form-contactos-grupo-input, .form-contactos-grupo-texarea{
+.form-contactos-grupo-input /*.form-contactos-grupo-texarea*/{
     width: 100%;
     background-color: transparent;
-    color: darkorange;
+    color: white;
     border: 1px solid white;
     padding: 5px 10px;
     border-radius: 5px;
+    transition: 0,5s;
 }
 .form-contactos-grupo-input::placeholder{
     color: white;
@@ -239,6 +256,19 @@
     border-radius: 5px;
     color: darkcyan;
     font-weight: bold;
+    font-size: 20px;
+}
+.opciones{
+   margin: 30px 0px; 
+
+}
+.opciones-opcion{
+    background-color: rgb(11, 138, 138);
+    padding: 40px;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    margin: 10px 0px;
 }
 /*Resoluciones de la pagina*/
 @media(max-width: 992px){
@@ -253,4 +283,7 @@
     width: 100%;
     padding: 5px;
 }
+}
+@media(max-width: 556px){
+
 }
