@@ -1,0 +1,15 @@
+@charset "UTF-8";
+/*Resoluciones de la pagina*/
+@media (max-width: 992px) {
+  .titulo-inicio {
+    font-size: 48px;
+  }
+  .galeria {
+    width: 100%;
+    padding: 5px;
+  }
+  .video-reseña {
+    width: 100%;
+    padding: 5px;
+  }
+}/*# sourceMappingURL=resoluciones.css.map */

@@ -1,287 +1,304 @@
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+
 /*Titutlo y subtitulo*/
 .titulo-inicio{
-    color: rgb(23, 75, 75); /*color de letras*/
-    font-size: 60px; /*tamaño de la fuente*/
-    text-align: center; /*alineado*/
-    font-weight: normal; /*tamaño ancho*/
-    font-style: italic; /*estilo de fuente*/
-    font-family: 'Times New Roman', Times, serif; /*tipo de familia de fuente*/
+  color: #731702; /*color de letras*/
+  font-size: 60px; /*tamaño de la fuente*/
+  text-align: center; /*alineado*/
+  font-weight: normal; /*tamaño ancho*/
+  font-style: italic; /*estilo de fuente*/
+  font-family: 'Times New Roman', Times, serif; /*tipo de familia de fuente*/
 }
 .subtitulo{
-    color: darkcyan;
-    text-align: center;
-    font-family: 'Times New Roman', Times, serif;
+  color: #014040;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
 }
-/*Navegador e imagenes/logo*/
+/*Navegador e imagenes, logo*/
 .navegador{
-    background-color: darkcyan; /*Color de fondo del navegador*/
-    position: relative;
-    width: 100%;
-    top: 0;
-    display: flex;
-    justify-content: end;
-    padding: 10px;
+  background-color: #014040; /*Color de fondo del navegador*/
+  position: relative;
+  width: 100%;
+  height: 70px;
+  top: 0;
+  display: flex;
+  justify-content: end;
+  padding: 10px;
 }
 .navegador-imagen{
-    width: 80px; /*ancho*/
-    height: 78px; /*alto*/
-    position: absolute;
-    left: 0;
-    top: 0;
+  width: 80px; /*ancho*/
+  height: 70px; /*alto*/
+  position: absolute;
+  left: 0;
+  top: 0;
 
 }
 .portada-imagen{
-    width: 100%;
-    height: 500px;
-    object-fit: cover;
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
 }
 .navegador-links{
-    list-style: none;
-    margin-top: 0;
-    position: sticky;
-    display: flex;
-    gap: 20px;
+  list-style: none;
+  margin-top: 0;
+  position: sticky;
+  display: flex;
+  gap: 20px;
 }
 .navegador-link a{
-    display: block;
-    padding: 20px 5px;
-    color: darkorange;
-    text-decoration: none;
+  display: block;
+  padding: 20px 5px;
+  color: darkorange;
+  text-decoration: none;
 }
 .navegador-link{
-    list-style: none;
+  list-style: none;
 }
 /*video de youtube*/
 .video-reseña{
-    width: 100%;
-    height: 500px;
-    margin: 10px;
+  width: 100%;
+  height: 500px;
+  margin: 10px;
+}
+/*Reseña*/
+.los-cinco-libro{
+  width: 350px;
+  height: 400px;
+  margin: 10px;
+  display: flex;
+  
 }
 /*tarjetas con sagas*/
 .sagas{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 20px;
 }
 .sinopsis-saga1{ /*modelado de caja a continuacion*/
-    width: 200px;
-    height: 400px;
-    background-color: rgba(60, 92, 133, 0.929);
-    border-radius: 5px;/*para redondear bordes*/
-    border-width: 2px;/*ancho del border*/
-    border-color: darkgray;/*color del borde*/
-    border-style: solid;/*border continuo*/
-    margin: 10px;/*margen entre el contenido y la caja*/
-    padding: 25px;
-    overflow-y: scroll;
-    /*position: relative;*/
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    /*para resumirlo en uno solo seria, border: solid 5px darkgray;*/
-    /*border-bottom/top/left/right: es para especificar un lado del border especifico*/
+  width: 200px;
+  height: 400px;
+  background-color:#1c6e6b;
+  border-radius: 5px;/*para redondear bordes*/
+  border-width: 2px;/*ancho del border*/
+  border-color: darkgray;/*color del borde*/
+  border-style: solid;/*border continuo*/
+  margin: 10px;/*margen entre el contenido y la caja*/
+  padding: 25px;
+  overflow-y: scroll;
+  /*position: relative;*/
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  /*para resumirlo en uno solo seria, border: solid 5px darkgray;*/
+  /*border-bottom/top/left/right: es para especificar un lado del border especifico*/
+}
+.sinopsis-saga1::-webkit-scrollbar{
+  width: 2px;
+}
+.sinopsis-saga1::-webkit-scrollbar-thumb{
+  background-color: beige;
 }
 .img-saga{
-    width: 100%;
-    height: 150px;
-    object-fit: cover;
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
 }
 /*.sinopsis-saga2{
-    width: 200px;
-    height: 200px;
-    background-color: rgba(197, 122, 122, 0.929);
-    border-radius: 5px;
-    border-width: 2px;
-    border-color: darkgray;
-    border-style: solid;
-    margin: 0px 5px 5px 5px;
-    padding: 5px;
-    overflow-y: scroll;
-    position: relative; /*posicion relativa es decir que puedo moverla de su lugar, pero el espacio donde esta quedara vacio*/
-    /*position absolute: se va a mover en relacion a la pantalla y su hueco queda libre para que lo ocupe otra caja
+  width: 200px;
+  height: 200px;
+  background-color: rgba(197, 122, 122, 0.929);
+  border-radius: 5px;
+  border-width: 2px;
+  border-color: darkgray;
+  border-style: solid;
+  margin: 0px 5px 5px 5px;
+  padding: 5px;
+  overflow-y: scroll;
+  position: relative; /*posicion relativa es decir que puedo moverla de su lugar, pero el espacio donde esta quedara vacio*/
+  /*position absolute: se va a mover en relacion a la pantalla y su hueco queda libre para que lo ocupe otra caja
 }*/
 /*.sinopsis-saga3{
-    width: 200px;
-    height: 200px;
-    background-color: rgba(197, 122, 122, 0.929);
-    border-radius: 5px;
-    border-width: 2px;
-    border-color: darkgray;
-    border-style: solid;
-    margin: 0px 5px 5px 5px;
-    padding: 5px;
-    overflow-y: scroll;
-    position: relative; /*posicion relativa
+  width: 200px;
+  height: 200px;
+  background-color: rgba(197, 122, 122, 0.929);
+  border-radius: 5px;
+  border-width: 2px;
+  border-color: darkgray;
+  border-style: solid;
+  margin: 0px 5px 5px 5px;
+  padding: 5px;
+  overflow-y: scroll;
+  position: relative; /*posicion relativa
 }*/
 .boton-primario{
-    width: 100px;
-    background-color: beige;
-    color: black;
-    border: 0px;
-    padding: 5px;
-    border-radius: 5px;
-    /*position: absolute;
-    right: 10px;
-    bottom: -300px;*/
+  width: 100px;
+  background-color: beige;
+  color: black;
+  border: 0px;
+  padding: 5px;
+  border-radius: 5px;
+  /*position: absolute;
+  right: 10px;
+  bottom: -300px;*/
 }
 .boton-primario:hover{ /*pseudoclases, cambia de color cuando pasa el mouse por encima*/
-    background-color: rgba(38, 69, 110, 0.929);
+  background-color: rgba(38, 69, 110, 0.929);
 }
 /*Galeria grids*/
 .galeria img:nth-child(1){
-    grid-area: img1;
+  grid-area: img1;
 } /*se usa para ahorrar espacio en clases que se repitan muchas veces*/
 .galeria{
-    width: 80%;
-    margin: auto;
-    padding: 5%;
-    display: grid;
-    gap: 10px;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-rows: repeat(6,200px);
-    grid-template-areas: "img1 img2 img2 img4"
-                         "img1 img2 img2 img4"
-                         "img1 img3 img3 img4"
-                         "img5 img5 img6 img6"
-                         "img5 img5 img6 img6"
-                         "img7 img7 img7 img7";
+  width: 80%;
+  margin: auto;
+  padding: 5%;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: repeat(6,200px);
+  grid-template-areas: "img1 img2 img2 img4"
+                       "img1 img2 img2 img4"
+                       "img1 img3 img3 img4"
+                       "img5 img5 img6 img6"
+                       "img5 img5 img6 img6"
+                       "img7 img7 img7 img7";
 }
 
 /*.img1{
-    grid-area: img1;
+  grid-area: img1;
 }*/
 .img2{
-    grid-area: img2;
+  grid-area: img2;
 }
 .img3{
-    grid-area: img3;
+  grid-area: img3;
 }
 .img4{
-    grid-area: img4;
+  grid-area: img4;
 }
 .img5{
-    grid-area: img5;
+  grid-area: img5;
 }
 .img6{
-    grid-area: img6;
+  grid-area: img6;
 }
 .img7{
-    grid-area: img7;
+  grid-area: img7;
 }
 .galeria-img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 /*.contenedores{
-    background-color: goldenrod;
-    display: flex; /*sobre entiende que van uno al lado del otro.
-    justify-content: space-evenly; donde quiero que se agrupen los contenedores, tiene 6 espaciados, stard, end, center y 3 space.
+  background-color: goldenrod;
+  display: flex; /*sobre entiende que van uno al lado del otro.
+  justify-content: space-evenly; donde quiero que se agrupen los contenedores, tiene 6 espaciados, stard, end, center y 3 space.
 
 }
 .contenedor{
-    background-color: cadetblue;
-    width: 100px;
-    height: 100px;
-    margin: 5px;
-    padding: 5px;
-    display: flex;
-    justify-content: center;
+  background-color: cadetblue;
+  width: 100px;
+  height: 100px;
+  margin: 5px;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
 }*/
 /*Estilos footer*/
 .link{
-    text-decoration: none;
-    font-size: 20px;
-    color: black;
-    background-color: darkcyan;
-    text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+  background-color: darkcyan;
+  text-align: center;
 }
 .link:visited{
-    color: white;
+  color: white;
 } /*link visitado*/
 
 /*formulario contactos*/
 .form-contacto{
-    font-size: 20px;
-    background-color: darkcyan;
-    width: 350px;
-    margin: auto;
-    padding: 20px;
-    border-radius: 5px;
+  font-size: 20px;
+  background-color: darkcyan;
+  width: 350px;
+  margin: auto;
+  padding: 20px;
+  border-radius: 5px;
 }
 .form-contactos-grupo{
-    display: flex;
-    flex-direction: column;
-    height: 80px;
-    gap: 15px;
-    margin: 15px 0px;
+  display: flex;
+  flex-direction: column;
+  height: 80px;
+  gap: 15px;
+  margin: 15px 0px;
 }
 .form-contactos-grupo-mensaje{
-    display: flex;
-    flex-direction: column;
-    height: 80px;
-    gap: 10px;
-    margin: 10px 0px;
+  display: flex;
+  flex-direction: column;
+  height: 80px;
+  gap: 10px;
+  margin: 10px 0px;
 }
 .form-contactos-grupo-label{
-    color: white;
+  color: white;
 }
 .form-contactos-grupo-input /*.form-contactos-grupo-texarea*/{
-    width: 100%;
-    background-color: transparent;
-    color: white;
-    border: 1px solid white;
-    padding: 5px 10px;
-    border-radius: 5px;
-    transition: 0,5s;
+  width: 100%;
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: 0,5s;
 }
 .form-contactos-grupo-input::placeholder{
-    color: white;
+  color: white;
 }
 .form-contactos-grupo-input:focus{
-    border: 2px solid white;
-    outline: none;
+  border: 2px solid white;
+  outline: none;
 }
 .boton-form{
-    width: 100%;
-    background-color: white;
-    padding: 10px 5px;
-    border: 0px;
-    border-radius: 5px;
-    color: darkcyan;
-    font-weight: bold;
-    font-size: 20px;
+  width: 100%;
+  background-color: white;
+  padding: 10px 5px;
+  border: 0px;
+  border-radius: 5px;
+  color: darkcyan;
+  font-weight: bold;
+  font-size: 20px;
 }
 .opciones{
-   margin: 30px 0px; 
+ margin: 30px 0px; 
 
 }
 .opciones-opcion{
-    background-color: rgb(11, 138, 138);
-    padding: 40px;
-    color: white;
-    text-align: center;
-    border-radius: 5px;
-    margin: 10px 0px;
+  background-color: rgb(11, 138, 138);
+  padding: 40px;
+  color: white;
+  text-align: center;
+  border-radius: 5px;
+  margin: 10px 0px;
 }
 /*Resoluciones de la pagina*/
 @media(max-width: 992px){
 .titulo-inicio{
-    font-size: 48px;
+  font-size: 48px;
 }
 .galeria{
-    width: 100%;
-    padding: 5px;
+  width: 100%;
+  padding: 5px;
 }
 .video-reseña{
-    width: 100%;
-    padding: 5px;
+  width: 100%;
+  padding: 5px;
 }
 }
 @media(max-width: 556px){

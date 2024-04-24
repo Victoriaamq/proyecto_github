@@ -1,0 +1,77 @@
+/*Estilos footer*/
+.link{
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    background-color: darkcyan;
+    text-align: center;
+    &:visited{
+      color: white;
+    } /*link visitado*/
+  }
+  .link
+  
+  /*formulario contactos*/
+  .form-contacto{
+    font-size: 20px;
+    background-color: darkcyan;
+    width: 350px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  .form-contactos-grupo{
+    display: flex;
+    flex-direction: column;
+    height: 80px;
+    gap: 15px;
+    margin: 15px 0px;
+  }
+  .form-contactos-grupo-mensaje{
+    display: flex;
+    flex-direction: column;
+    height: 80px;
+    gap: 10px;
+    margin: 10px 0px;
+  }
+  .form-contactos-grupo-label{
+    color: white;
+  }
+  .form-contactos-grupo-input /*.form-contactos-grupo-texarea*/{
+    width: 100%;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: 0,5s;
+  }
+  .form-contactos-grupo-input::placeholder{
+    color: white;
+  }
+  .form-contactos-grupo-input:focus{
+    border: 2px solid white;
+    outline: none;
+  }
+  .boton-form{
+    width: 100%;
+    background-color: white;
+    padding: 10px 5px;
+    border: 0px;
+    border-radius: 5px;
+    color: darkcyan;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  .opciones{
+   margin: 30px 0px; 
+  
+  }
+  .opciones-opcion{
+    background-color: rgb(11, 138, 138);
+    padding: 40px;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    margin: 10px 0px;
+  }

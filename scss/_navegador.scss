@@ -1,0 +1,45 @@
+/*Navegador e imagenes, logo*/
+.navegador{
+    background-color: $color-primario; /*Color de fondo del navegador*/
+    position: relative;
+    width: 100%;
+    top: 0;
+    display: flex;
+    justify-content: end;
+    padding: 10px;
+  }
+  .navegador-imagen{
+    width: 80px; /*ancho*/
+    height: 78px; /*alto*/
+    position: absolute;
+    left: 0;
+    top: 0;
+  
+  }
+  .portada-imagen{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+  }
+  .navegador-links{
+    list-style: none;
+    margin-top: 0;
+    position: sticky;
+    display: flex;
+    gap: 20px;
+  }
+  .navegador-link a{
+    display: block;
+    padding: 20px 5px;
+    color: darkorange;
+    text-decoration: none;
+  }
+  .navegador-link{
+    list-style: none;
+  }
+  /*video de youtube*/
+  .video-reseña{
+    width: 100%;
+    height: 500px;
+    margin: 10px;
+  }
