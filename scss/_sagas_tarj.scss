@@ -11,7 +11,7 @@
     background-color: $color-secundario;
     border-radius: 5px;/*para redondear bordes*/
     border-width: 2px;/*ancho del border*/
-    border-color: darkgray;/*color del borde*/
+    border-color: $color-secundario;/*color del borde*/
     border-style: solid;/*border continuo*/
     margin: 10px;/*margen entre el contenido y la caja*/
     padding: 25px;
@@ -45,7 +45,7 @@
     right: 10px;
     bottom: -300px;*/
     &:hover{ /*pseudoclases, cambia de color cuando pasa el mouse por encima*/
-      background-color: rgba(38, 69, 110, 0.929);
+      background-color: rgba(172, 198, 233, 0.929);
     }
   }
  

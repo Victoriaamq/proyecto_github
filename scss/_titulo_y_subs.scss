@@ -1,6 +1,6 @@
 /*Titutlo y subtitulo*/
 .titulo-inicio{
-    color: rgb(23, 75, 75); /*color de letras*/
+    color: $color-cuarto; /*color de letras*/
     font-size: 60px; /*tamaño de la fuente*/
     text-align: center; /*alineado*/
     font-weight: normal; /*tamaño ancho*/
@@ -8,7 +8,7 @@
     font-family: 'Times New Roman', Times, serif; /*tipo de familia de fuente*/
 }
 .subtitulo{
-    color: darkcyan;
+    color: $color-primario;
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
 }

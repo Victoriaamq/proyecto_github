@@ -2,19 +2,19 @@
 .link{
     text-decoration: none;
     font-size: 20px;
-    color: black;
-    background-color: darkcyan;
+    color: #F27405;
+    background-color: $color-secundario;
     text-align: center;
     &:visited{
-      color: white;
+      color: $color-contraste;
     } /*link visitado*/
   }
-  .link
+  
   
   /*formulario contactos*/
   .form-contacto{
     font-size: 20px;
-    background-color: darkcyan;
+    background-color: $color-secundario;
     width: 350px;
     margin: auto;
     padding: 20px;
@@ -35,27 +35,27 @@
     margin: 10px 0px;
   }
   .form-contactos-grupo-label{
-    color: white;
+    color: $color-contraste;
   }
   .form-contactos-grupo-input /*.form-contactos-grupo-texarea*/{
     width: 100%;
     background-color: transparent;
-    color: white;
-    border: 1px solid white;
+    color: $color-contraste;
+    border: 1px solid $color-contraste;
     padding: 5px 10px;
     border-radius: 5px;
     transition: 0,5s;
   }
   .form-contactos-grupo-input::placeholder{
-    color: white;
+    color: $color-contraste;
   }
   .form-contactos-grupo-input:focus{
-    border: 2px solid white;
+    border: 2px solid $color-contraste;
     outline: none;
   }
   .boton-form{
     width: 100%;
-    background-color: white;
+    background-color: $color-contraste;
     padding: 10px 5px;
     border: 0px;
     border-radius: 5px;
@@ -70,7 +70,7 @@
   .opciones-opcion{
     background-color: rgb(11, 138, 138);
     padding: 40px;
-    color: white;
+    color: $color-contraste;
     text-align: center;
     border-radius: 5px;
     margin: 10px 0px;
