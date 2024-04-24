@@ -6,6 +6,115 @@
     <title>Libroverso - Nosotros</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="shortcut icon" href="./Img/Libroverso.png" type="image/x-icon">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: poppins;
+        }
+        section{
+            display: flex;
+            justify-content: center;
+        }
+        .tarjeta{
+            position: absolute;
+        }
+        .card{
+            display: flex;
+            width: 1500px;
+            height: 400px;
+            padding: 40px;
+            background: #fdf8f7;
+            border-radius: 20px;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+        .text{
+            width: 350px;
+        }
+        div div{
+            margin: 20px;
+        }
+        .img{
+            position: absolute;
+            width: 220px;
+            z-index: 1;
+            top: -5px;
+            right: 430px;
+        }
+        .circulo{
+            position: relative;
+            background: #fd6e0a;
+            border-radius: 50%;
+            width: 220px;
+            height: 220px;
+            top: 200px;
+            right: -30px;
+            z-index: 0;
+        }
+        .circulo2{
+            position: relative;
+            background: #fd6f0a2d;
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+            top: -70px;
+            right: -60px;
+            z-index: 0;
+        }
+        .circulo3{
+            position: relative;
+            background: #fd6f0a0e;
+            border-radius: 50%;
+            width: 180px;
+            height: 180px;
+            top: -310px;
+            right: -100px;
+            z-index: 0;
+        }
+        .abajo{
+            display: flex;
+            width: 600px;
+            height: 80px;
+            padding: 10px;
+            justify-content: space-between;
+            align-items: center;
+            background: white;
+            border-radius: 100px;
+            box-shadow: 2px 3px 15px #ECF0F1 ;
+        }
+        .barrainferior{
+            position: relative;
+            top: -80px;
+            z-index: 2;
+        }
+        h1{
+            color: #15295f;
+            font-size: 40px;
+        }
+        h2{
+            color: #15295f;
+        }
+        h3{
+            color: #15295f;
+        }
+        h5{
+            color: #fd6e0a;
+        }
+        p{
+            color: #989898;
+            font-size: 14px;
+        }
+        .icono{
+            width: 40px;
+        }
+        .logos{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }</style>
 </head>
 <body>
     <header>
@@ -19,17 +128,76 @@
         </nav> 
         <img class="portada-imagen" src="./Img/portada-final.png" alt=""> 
     </header>
-    <main>
-        <h1 class="titulo-inicio">Nosotros</h1> 
-    </main>
+    
+   <main>
+    <div class="tarjeta">
+        <section>
+            <div class="card">
+                <div class="text">
+                    <h5>Hola, soy</h5>
+                    <h1>Victoria Malpica</h1>
+                    <h5>Licenciada en Ciberseguridad</h5>
+                    <br>
+                    <p>Tengo 24 años, naci en Valencia-Venezuela y emigre a Buenos Aires en 2017. Mi primer libro fue escrito en 2012 y publicado recien hasta 2020. Actualmente soy Barista, estudio Aviacion Civil y Programacion y mi sueño es publicar algun dia mis libros en fisico.</p>
+                    <br>
+                </div>
+                <div class="imagen">
+                    <img class="img" src="./Img/biografia/foto-perfil.png" alt="Fotoperfil">
+                    <div class="circulo"></div>
+                    <div class="circulo2"></div>
+                    <div class="circulo3"></div>
+                </div>
+            </div>
+        </section>
+        <section class="barrainferior">
+            <div class="abajo">
+                <div class="logos">
+                    <img class="icono" src="./Img/biografia/logos/logo-ig.png" alt="instagram">
+                    <div>
+                        <h3>@victoriaamq</h3>
+
+                    </div>
+                </div>
+                <div class="logos">
+                    <img class="icono" src="./Img/biografia/logos/logo-mail.png" alt="mail">
+                    <div>
+                        <h3>victoriamalpica.a9@gmail.com</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+   </main>
     <aside>
 
     </aside>
-    <footer>
-        <div class="link">
-            <a class="link-visited" href="https://www.wattpad.com/user/Crusiaris">Wattpad</a>
-            <p> Copyright  © VictoriaMalpica. Todos los derechos reservados. </p>
+    <!--<footer class="pie-pagina">
+        <div class="grupo-1">
+            <div class="box">
+                <figure>
+                    <a href="#">
+                        <img src="./Img/Libroverso.png" alt="logo-pagina">
+                    </a>
+                </figure>
+            </div>
+            <div class="box">
+                <h2>SOBRE NOSOTROS</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, amet!</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, amet!</p>
+            </div>
+            <div class="box">
+                <h2>SIGUENOS</h2>
+                <div class="red-social">
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa  fa-intagram"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-youtube"></a>
+                </div>
+            </div>
         </div>
-    </footer>
+        <div class="grupo-2">
+            <small>&copy; 2024 <b>Libroverso</b> - Todos los Derechos Reservados</small>
+        </div>
+    </footer>-->
 </body>
 </html>

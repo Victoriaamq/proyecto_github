@@ -1,15 +1,26 @@
 /*Estilos footer*/
-.link{
-    text-decoration: none;
-    font-size: 20px;
-    color: #F27405;
-    background-color: $color-secundario;
-    text-align: center;
-    &:visited{
-      color: $color-contraste;
-    } /*link visitado*/
-  }
-  
+.pie-pagina{
+width: 100%;
+background-color: $color-primario;
+}
+.grupo-1{
+width: 100%;
+max-width: 1200px;
+margin: auto;
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-gap: 50px;
+padding: 45px 0px;
+}
+.grupo-2{
+
+}
+.box{
+
+}
+.red-social{
+
+}
   
   /*formulario contactos*/
   .form-contacto{
@@ -19,6 +30,7 @@
     margin: auto;
     padding: 20px;
     border-radius: 5px;
+    margin-bottom: 10px;
   }
   .form-contactos-grupo{
     display: flex;

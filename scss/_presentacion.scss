@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins;
+}
+section{
+    display: flex;
+    justify-content: center;
+}
+.tarjeta{
+    position: absolute;
+}
+.card{
+    display: flex;
+    width: 900px;
+    height: 400px;
+    padding: 40px;
+    background: #fdf8f7;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.text{
+    width: 350px;
+}
+div div{
+    margin: 20px;
+}
+.img{
+    position: absolute;
+    width: 350px;
+    z-index: 1;
+    top: -47px;
+}
+.circulo{
+    position: relative;
+    background: #fd6e0a;
+    border-radius: 50%;
+    width: 220px;
+    height: 220px;
+    top: 200px;
+    right: -30px;
+    z-index: 0;
+}
+.circulo2{
+    position: relative;
+    background: #fd6f0a2d;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    top: -70px;
+    right: -60px;
+    z-index: 0;
+}
+.circulo3{
+    position: relative;
+    background: #fd6f0a0e;
+    border-radius: 50%;
+    width: 180px;
+    height: 180px;
+    top: -310px;
+    right: -100px;
+    z-index: 0;
+}
+.abajo{
+    display: flex;
+    width: 600px;
+    height: 80px;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    border-radius: 100px;
+    box-shadow: 2px 3px 15px #ECF0F1 ;
+}
+.barrainferior{
+    position: relative;
+    top: -80px;
+    z-index: 2;
+}
+h1{
+    color: #15295f;
+    font-size: 40px;
+}
+h2{
+    color: #15295f;
+}
+h3{
+    color: #15295f;
+}
+h5{
+    color: #fd6e0a;
+}
+p{
+    color: #989898;
+    font-size: 14px;
+}
+.icono{
+    width: 50px;
+}
+.logos{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
